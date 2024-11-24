@@ -17,7 +17,7 @@ body {
 header {
     background-color: #323b4c; /* Dark background */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -163,7 +163,7 @@ h3 {
 
 .project-content {
     display: flex;
-    flex-direction: row-reverse; /* Swap image and description order */
+    flex-direction: row-reverse;
     align-items: center;
 }
 
@@ -192,4 +192,70 @@ h3 {
 
 .project-description p {
     color: #666;
+}
+
+/* General Styling for Assignments */
+.assignment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.assignment-tile {
+    display: flex; /* Aligns image and content horizontally */
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.assignment-tile:hover {
+    transform: scale(1.05);
+}
+
+.assignment-image {
+    flex: 0 0 150px; /* Fixed width for the image container */
+    height: 210px; /* Height for A4 proportion (150px width * 1.4 ratio) */
+    object-fit: contain; /* Scales the image to fit inside the container */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-right: 20px; /* Space between image and text */
+    background-color: #f4f4f4; /* Add a light background color for better contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.assignment-content {
+    flex: 1; 
+}
+
+.assignment-content h4 {
+    font-size: 1.5rem;
+    color: #323b4c;;
+    margin-bottom: 10px;
+}
+
+.assignment-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #08326d;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #073a80;
 }
