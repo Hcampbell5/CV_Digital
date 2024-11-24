@@ -13,4 +13,82 @@ body {
     padding: 20px;
 }
 
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #1c4b72; /* Blue color for name */
+    font-size: 2.5rem;
+}
+
+header h2 {
+    color: #666; /* Subtle gray for subtitle */
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+}
+
+section h3 {
+    background-color: #323b4c; /* Grey section header background */
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+section p, section ul, section article {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #091d2c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Specific Styling for Work Experience */
+.work-experience h4 {
+    color: #1c4b72; /* Dark blue for job titles */
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+/* Override rule specifically for the 'work-experience' section */
+section.work-experience ul {
+    padding: 0; /* Remove padding */
+    background-color: transparent; /* Remove background */
+    border: none; /* Remove border */
+    border-radius: 0
+}
 
