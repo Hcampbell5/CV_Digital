@@ -15,17 +15,18 @@ body {
 
 /* Header Section */
 header {
+    background-color: #323b4c; /* Dark background */
     text-align: center;
     margin-bottom: 30px;
 }
 
 header h1 {
-    color: #1c4b72; /* Blue color for name */
+    color: #4cbed8; /* Blue color for name */
     font-size: 2.5rem;
 }
 
 header h2 {
-    color: #666; /* Subtle gray for subtitle */
+    color: #8e8b8b; /* Subtle gray for subtitle */
     font-size: 1.5rem;
     font-weight: normal;
     margin-top: 10px;
@@ -92,3 +93,36 @@ section.work-experience ul {
     border-radius: 0
 }
 
+/* Navigation Bar */
+nav {
+    background-color: #323b4c; /* Dark background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Center items */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
