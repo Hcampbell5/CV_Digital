@@ -259,3 +259,27 @@ h3 {
 .download-btn:hover {
     background-color: #073a80;
 }
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .project-content,
+    .assignment-tile {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .project-image,
+    .assignment-image {
+        flex: 0 0 auto; /* Remove fixed width */
+        width: 100%; /* Allow the image to span full width */
+        height: auto; /* Adjust height automatically */
+        margin-right: 0; /* Remove space between text and image */
+        margin-bottom: 15px; /* Add space below the image */
+    }
+
+    .project-description,
+    .assignment-content {
+        flex: 1; /* Allow text to expand naturally */
+        width: 100%; /* Ensure text takes the full width */
+    }
+}
