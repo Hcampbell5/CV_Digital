@@ -168,8 +168,7 @@ h3 {
 }
 
 .project-image {
-    flex: 1;
-    max-width: 50%;
+    flex: 0 0 60%;
     padding: 10px;
 }
 
@@ -181,7 +180,7 @@ h3 {
 }
 
 .project-description {
-    flex: 1;
+    flex: 0 0 40%;
     padding: 10px;
 }
 
