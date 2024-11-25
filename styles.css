@@ -11,47 +11,129 @@ body {
     background-color: #f4f4f9; /* Light gray background for subtle contrast */
     color: #333; /* Dark gray text */
     padding: 20px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align items to the top */
+    height: 100%; /* Full screen height */
+    flex-direction: column;
 }
 
 /* Header Section */
 header {
-    background-color: #323b4c; /* Dark background */
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: #074c96; /* Darker blue background */
+    display: flex;
+    align-items: center; /* Center align everything */
+    justify-content: space-between; /* Ensure title and nav are on opposite ends */
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 10px 0; /* Margin outside the header */
+    width: 100%; /* Ensure header takes full width */
+    max-width: 1200px; /* Max width for larger screens */
 }
 
 header h1 {
-    color: #4cbed8; /* Blue color for name */
-    font-size: 2.5rem;
+    color: #4cbed8; /* Light blue color for the title */
+    font-size: 2.5rem; /* Larger font size */
+    margin: 0;
 }
 
 header h2 {
-    color: #8e8b8b; /* Subtle gray for subtitle */
+    color: #8e8b8b; /* Subtle gray for the subtitle */
     font-size: 1.5rem;
     font-weight: normal;
     margin-top: 10px;
+    margin-bottom: 0;
 }
 
-/* Section Styling */
+header .back-button {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+header .back-button:hover {
+    background-color: #4db8b6; /* Light blue on hover */
+}
+
+/* Navigation Bar inside Header */
+nav {
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between each link */
+}
+
+nav ul li a {
+    color: white; /* White text color for the links */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling for all sections */
 section {
     margin-bottom: 30px;
 }
 
 section h3 {
-    background-color: #323b4c; /* Grey section header background */
+    background-color: #074c96; /* Blue background for section headers */
     color: white;
-    padding: 10px;
+    padding: 15px;
     font-size: 1.2rem;
-    border-radius: 4px;
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+    margin: 0;
 }
 
 section p, section ul, section article {
+    margin: 0;
     padding: 15px;
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
 }
 
+/* Profile, Education, Work Experience, and Skills Shared Style */
+.profile, .education, .work-experience, .skills, .contact, .references {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile h3, .education h3, .work-experience h3, .skills h3, .contact h3, .references h3 {
+    background-color: #074c96; /* Blue background for the section headers */
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    margin: 0;
+}
+
+.profile p, .education p, .work-experience p, .skills p, .contact p, .references p,
+.education ul, .work-experience ul, .skills ul, .contact ul {
+    margin: 0;
+    padding: 15px;
+    background-color: white;
+    color: #666;
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+/* Education Section */
 ul {
     list-style: none;
 }
@@ -88,43 +170,9 @@ footer {
 /* Override rule specifically for the 'work-experience' section */
 section.work-experience ul {
     padding: 0; /* Remove padding */
-    background-color: transparent; /* Remove background */
-    border: none; /* Remove border */
-    border-radius: 0
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #323b4c; /* Dark background */
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center; /* Center items */
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
 }
 
 /* Portfolio Section */
@@ -199,10 +247,11 @@ h3 {
     list-style: none;
     padding: 0;
     margin: 0;
+    align-items: center;
 }
 
 .assignment-tile {
-    display: flex; /* Aligns image and content horizontally */
+    display: flex;
     align-items: center;
     background-color: white;
     border: 1px solid #ddd;
@@ -220,11 +269,11 @@ h3 {
 
 .assignment-image {
     flex: 0 0 150px; /* Fixed width for the image container */
-    height: 210px; /* Height for A4 proportion (150px width * 1.4 ratio) */
-    object-fit: contain; /* Scales the image to fit inside the container */
-    border-radius: 10px; /* Optional: rounded corners */
-    margin-right: 20px; /* Space between image and text */
-    background-color: #f4f4f4; /* Add a light background color for better contrast */
+    height: 210px; /* Height for A4 proportion */
+    object-fit: contain; 
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: #f4f4f4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +285,7 @@ h3 {
 
 .assignment-content h4 {
     font-size: 1.5rem;
-    color: #323b4c;;
+    color: #323b4c;
     margin-bottom: 10px;
 }
 
@@ -260,26 +309,55 @@ h3 {
     background-color: #073a80;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Media Query for smaller screens */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header items vertically */
+        text-align: center;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
     .project-content,
     .assignment-tile {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: flex-start; /* Align items to the left */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .project-image,
     .assignment-image {
-        flex: 0 0 auto; /* Remove fixed width */
-        width: 100%; /* Allow the image to span full width */
-        height: auto; /* Adjust height automatically */
-        margin-right: 0; /* Remove space between text and image */
-        margin-bottom: 15px; /* Add space below the image */
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 
     .project-description,
     .assignment-content {
-        flex: 1; /* Allow text to expand naturally */
-        width: 100%; /* Ensure text takes the full width */
+        flex: 1;
+        width: 100%;
     }
 }
