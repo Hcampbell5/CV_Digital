@@ -450,8 +450,6 @@ footer p {
     transform: scale(1.1);
 }
 
-
-
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     header {
@@ -519,6 +517,7 @@ footer p {
     .project-description p {
         font-size: 0.9rem; 
     }
+    
 
     /* Ensure assignment tiles also stack correctly */
     .assignment-tile {

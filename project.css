@@ -150,13 +150,13 @@ header .back-button:hover {
 
 /* Link Container Styling */
 .link-container {
-    background-color: #1c74d2; /* Blue background */
-    padding: 5px 20px;
     display: flex;
     justify-content: center;
     width: auto;
     margin-top: 20px;
+    padding: 5px 20px;
     border-radius: 5px;
+    text-align: center;
 }
 
 .link-container a {
@@ -167,15 +167,43 @@ header .back-button:hover {
     align-items: center;
 }
 
-.link-container a:hover {
-    text-decoration: underline;
+/* Web Link Style (Blue) */
+.web-link-container {
+    background-color: #0073cf; 
+}
+.web-link-container:hover {
+    background-color: #005bb5; 
 }
 
+.web-link-container a {
+    color: #fff; 
+}
+
+/* GitHub Link Style (Purple) */
+.github-link-container {
+    background-color: #6e5494; 
+}
+.github-link-container:hover {
+    background-color: #5a447c; 
+}
+
+.github-link-container a {
+    color: #fff; 
+}
+
+/* External Link Icon Styling */
 .external-link-icon {
     width: 20px;
     height: auto;
     margin-right: 10px;
 }
+
+/* Icon colors on hover */
+.web-link-container a:hover .external-link-icon,
+.github-link-container a:hover .external-link-icon {
+    filter: brightness(1.3); /* Slight brightening on hover */
+}
+
 
 /* Project Details Section Styling */
 .project-details {
@@ -212,32 +240,127 @@ header .back-button:hover {
     margin-bottom: 10px;
 }
 
+/* Project Image Grid */
+.photo-grid {
+    display: grid;
+    grid-gap: 15px; 
+    padding: 10px; 
+    max-width: 70vw;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+/* Each grid item */
+.photo-item {
+    position: relative; 
+    overflow: hidden; 
+    padding-top: 56.25%;
+}
+
+/* Image styling */
+.photo-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
 /* Footer Section Styling */
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 30px;
+    position: relative;
+    margin-top: auto;
     text-align: center;
-    font-size: 1rem;
-    color: #999999; /* Lighter gray footer text */
-    margin-top: 50px;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 footer p {
-    padding: 10px 0;
+    color: #fff;
+    margin: 0;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0073cf;
+}
+
+.social-icon i {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover i {
+    transform: scale(1.1);
 }
 
 /* Media query for small screens */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        text-align: center;
+        padding: 15px;
+    }
+
+    header .back-button {
+        font-size: 0.8rem;
+        padding: 1px 15px;
+    }
+
+    .project-details {
+        padding: 15px;
+        margin: 0 15px;
+    }
+
     body {
         padding-top: 180px; 
     }
 
     .hero-container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
     .hero-img {
-        width: 300px;
-        margin-right: 0;
-        margin-bottom: 20px;
+        display: none;
+
     }
+
+    .photo-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        max-width: 90vw;
+
+    }
+
 }
