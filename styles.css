@@ -461,6 +461,7 @@ footer p {
     }
 
     body {
+        padding: 0;
         padding-top: 120px; 
     }
 
