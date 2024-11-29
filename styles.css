@@ -21,7 +21,7 @@ header {
     align-items: center; /* Vertically center the items */
     padding: 20px 30px;
     border-radius: 10px;
-    margin: 10px 0; /* Margin outside the header */
+    margin: 0px; /* Margin outside the header */
 }
 
 header h1 {
