@@ -17,6 +17,45 @@ body {
     line-height: 1.6;
 }
 
+/* Apply Lato font for everything */
+body, h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;  
+    color: #d3d3d3; 
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 900;  
+    font-size: 3rem;   
+    color: #fff;   
+    margin-bottom: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 700;  
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0073cf;  
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    font-weight: 700;  
+    color: #0073cf;   
+}
+
 /* Header Section Styling */
 header {
     display: flex;
