@@ -64,7 +64,6 @@ header {
     width: 100%; /* Full width of the page */
     background-color: #111; /* Dark background for header */
     padding: 20px 30px;
-    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for header */
     position: fixed; /* Fixed to the top */
     top: 0;
