@@ -58,6 +58,7 @@ h2, h3 {
 
 /* Header Section Styling */
 header {
+    height: 80px;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -330,6 +331,7 @@ footer p {
 /* Media query for small screens */
 @media (max-width: 768px) {
     header {
+        height: auto;
         flex-direction: column; 
         text-align: center;
         padding: 15px;
@@ -346,7 +348,7 @@ footer p {
     }
 
     body {
-        padding-top: 180px; 
+        padding-top: 100px; 
     }
 
     .hero-container {
