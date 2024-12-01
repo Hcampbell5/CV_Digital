@@ -60,7 +60,7 @@ h2, h3 {
 
 body {
     line-height: 1.6;
-    background-color: #1a1a1a; 
+    background-color: #061723; 
     color: #d3d3d3; 
     padding: 20px;
     padding-top: 100px; 
@@ -73,7 +73,7 @@ header {
     justify-content: space-between; 
     align-items: center; 
     width: 100%; 
-    background-color: #111; 
+    background-color: #071622; 
     padding: 20px 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
     position: fixed; 
@@ -121,7 +121,7 @@ nav ul li a:hover {
     margin: 0 auto;
     max-width: 900px; 
     padding: 30px;
-    background-color: #232323; 
+    background-color: #092234; 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); 
 }
@@ -207,7 +207,7 @@ section.work-experience ul {
 
 .skills li {
     display: inline-block;  
-    background-color: #2c2c2c;  
+    background-color: #061723;  
     color: #d3d3d3;  
     padding: 10px 20px;  
     border-radius: 5px;  
@@ -276,8 +276,8 @@ h3 {
 
 /* Individual Project Tile */
 .project-tile {
-    background-color: #2c2c2c;
-    border: 1px solid #444; 
+    background-color: #092234;
+    border: 1px solid #0C2D45; 
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -334,8 +334,8 @@ h3 {
 .assignment-tile {
     display: flex;
     align-items: center;
-    background-color: #2c2c2c; 
-    border: 1px solid #444; 
+    background-color: #092234; 
+    border: 1px solid #0C2D45; 
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
