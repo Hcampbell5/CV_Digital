@@ -495,6 +495,34 @@ section p, section ul {
     text-decoration: underline;
 }
 
+/* Print CV */
+.print-cv-container {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.print-btn {
+    background-color: #6DA34D;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.print-btn i {
+    margin-right: 4px;
+}
+
+.print-btn:hover {
+    background-color: #7d9472;
+}
+
 
 
 /* Footer */
@@ -616,6 +644,109 @@ footer p {
         .contact-info p {
           font-size: 0.9rem;
         }
-      }
-      
+}
 
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        background: white;
+        color: black;
+        font-family: 'Lato', Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.1;
+    }
+
+    header, footer, nav, .print-cv-container {
+        display: none;
+    }
+
+    .content-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    section {
+        margin-bottom: 4px;
+        page-break-inside: avoid;
+    }
+
+    section h3 {
+        font-size: 1rem;
+        margin: 2px 0 3px 0;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+        margin: 1px 0 2px 0;
+    }
+
+    p, li {
+        font-size: 9pt;
+        margin: 0 0 2px 0;
+    }
+
+    ul {
+        padding-left: 15px;
+        margin: 0 0 2px 0;
+    }
+
+    .skills-grid {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 3px !important;
+    }
+
+    .skill-card {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 5px;
+        font-size: 0.75rem;
+        min-height: 20px;
+        max-width: 180px;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .skill-dots {
+        display: flex !important;
+        gap: 2px;
+        margin-top: 2px;
+    }
+
+    .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #cfd8dc;
+    }
+
+    .dot.filled {
+        background-color: #3cb371;
+    }
+
+    .cert-cards, .project-tile, .assignment-tile {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+        margin: 0;
+        padding: 2px;
+    }
+
+    .cert-card {
+        padding: 3px 5px;
+        font-size: 0.75rem;
+        width: 120px;
+        margin: 0;
+    }
+
+    .references p {
+        margin: 0 0 2px 0;
+        font-size: 9pt;
+    }
+}
