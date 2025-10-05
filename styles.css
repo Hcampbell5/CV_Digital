@@ -144,8 +144,8 @@ section p, section ul {
     background: #f9f9f9;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.07);
-    padding: 15px 18px;        /* slightly less padding */
-    width: 160px;              /* reduced width */
+    padding: 15px 18px;        
+    width: 160px;            
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: default;
     display: flex;
@@ -153,20 +153,20 @@ section p, section ul {
     gap: 12px;
   }
   .cert-icon {
-    font-size: 2rem;           /* slightly smaller icon */
+    font-size: 2rem;           
     color: #4CAF50;
     min-width: 36px;
     text-align: center;
   }
   .cert-info h4 {
     margin: 0 0 4px 0;
-    font-size: 1rem;           /* smaller heading */
+    font-size: 1rem;           
     font-weight: 700;
     color: #222;
   }
   .cert-info p {
     margin: 0;
-    font-size: 0.8rem;         /* smaller paragraph */
+    font-size: 0.8rem;         
     color: #555;
     line-height: 1.2;
   }
@@ -226,7 +226,7 @@ section.education ul li ul {
 
 .skill-card {
     position: relative;
-    padding: 6px 20px 10px 20px;  /* less vertical padding, keep enough horizontal padding */
+    padding: 6px 20px 10px 20px;  
     background-color: #eef2eb;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -239,18 +239,18 @@ section.education ul li ul {
     align-items: center;
     justify-content: center;
     line-height: 1.1;
-    min-height: 36px;  /* make it short vertically */
-    max-width: 185px; /* keeps cards nicely sized horizontally */
-    white-space: nowrap; /* prevent text wrap */
+    min-height: 36px;  
+    max-width: 185px; 
+    white-space: nowrap; 
   }
   
   .skill-card i {
-    margin-bottom: 2px; /* small space between icon and text */
+    margin-bottom: 2px; 
     font-size: 1.1rem;
   }
   
   .skill-dots {
-    margin-top: 4px; /* small gap from text */
+    margin-top: 4px; 
     display: flex;
     gap: 4px;
     justify-content: center;
@@ -407,7 +407,7 @@ section.education ul li ul {
 .profile-header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Horizontally center contents */
+    justify-content: center; 
     gap: 40px;
     margin: 40px auto;
     max-width: 900px;
@@ -426,8 +426,8 @@ section.education ul li ul {
 .job-title {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #4CAF50; /* Grassy green */
-    margin-top: -15px; /* Pulls it closer to the name */
+    color: #4CAF50; 
+    margin-top: -15px; 
     margin-bottom: 15px;
 }
 
@@ -439,15 +439,15 @@ section.education ul li ul {
 }
 
 .contact-info h2 {
-    font-size: 1.8rem; /* Slightly smaller name */
+    font-size: 1.8rem; 
     margin-bottom: 12px;
     color: #222;
 }
 
 .contact-info p {
-    font-size: 0.95rem; /* Smaller text */
-    line-height: 1.3;   /* Tighter spacing */
-    margin-bottom: 6px; /* Less vertical margin */
+    font-size: 0.95rem; 
+    line-height: 1.3;   
+    margin-bottom: 6px; 
     color: #444;
 }
 
@@ -506,6 +506,14 @@ footer p {
         padding: 15px;
     }
 
+    body {
+        padding-top: 130px; 
+      }
+    
+    page-title {
+        margin-top: 0;
+    }
+
     nav ul {
         justify-content: center;
         margin-top: 10px;
@@ -554,4 +562,25 @@ footer p {
     .assignment-content {
         width: 100%;
     }
-}
+        .profile-header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 20px;
+        }
+      
+        .profile-photo {
+          width: 150px;
+          height: 150px;
+        }
+      
+        .contact-info h2 {
+          font-size: 1.5rem;
+        }
+      
+        .contact-info p {
+          font-size: 0.9rem;
+        }
+      }
+      
+
